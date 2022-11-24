@@ -1,0 +1,18 @@
+Processing: Visa MDB Charge Back process
+Department: Electronic Product Operations
+
+Dear Team, 
+
+Please be informed that, I encountered the following error:
+
+ExceptionMessage
+
+Kindly Please correct the date and retry or forward this to VISA Bot Support Desk
+for more information. Thank you.
+
+Regards,
+
+FirstRobotics
+FirstBank of Nigeria,
+35 Marina street, Lagos
+Please note that this is an RPA generated email, do not reply to it. For processing and scheduling enquiries please contact botcontrollers@firstbanknigeria.com. For other enquiries, please contact firstrobotics@firstbanknigeria.com.
