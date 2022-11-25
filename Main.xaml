@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="832,2365" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.Collections;assembly=mscorlib" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ucas="clr-namespace:UiPath.Core.Activities.Storage;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="766,515" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.Collections;assembly=mscorlib" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ucas="clr-namespace:UiPath.Core.Activities.Storage;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="74">
       <x:String>System.Activities</x:String>
@@ -136,7 +136,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Bot Hub" sap:VirtualizedContainerService.HintSize="842,2300" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Bot Hub" sap:VirtualizedContainerService.HintSize="200,68" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="Config" />
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="Sysfig" />
@@ -147,15 +147,15 @@
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+        <x:Boolean x:Key="IsPinned">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Pre Day Check" sap:VirtualizedContainerService.HintSize="800,352" sap2010:WorkflowViewState.IdRef="Sequence_81">
+    <Sequence DisplayName="Pre Day Check" sap:VirtualizedContainerService.HintSize="200,68" sap2010:WorkflowViewState.IdRef="Sequence_81">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Kill_All_Application workflow" sap:VirtualizedContainerService.HintSize="262,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_91" UnSafe="False" WorkflowFileName="Project\\Kill_All_Application.xaml">
@@ -292,7 +292,7 @@
         </ui:InvokeCode>
       </Sequence>
     </Sequence>
-    <ui:ForEach x:TypeArguments="x:String" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="800,1816" sap2010:WorkflowViewState.IdRef="ForEach`1_2">
+    <ui:ForEach x:TypeArguments="x:String" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="ForEach`1_2">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:String">
           <ActivityAction.Argument>
@@ -452,6 +452,56 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:InvokeWorkflowFile>
+                    <Sequence DisplayName="Delete WorkFiles" sap:VirtualizedContainerService.HintSize="262,68" sap2010:WorkflowViewState.IdRef="Sequence_84">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:String" Name="ProcessingFolder" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:Comment sap:VirtualizedContainerService.HintSize="334,75" sap2010:WorkflowViewState.IdRef="Comment_3" Text="// Comment the seqeuence to activate to bot to resum peding job" />
+                      <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_35">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">
+                            <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_266">ProcessingFolder</mca:CSharpReference>
+                          </OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">
+                            <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_655">Config["ProcessingFolderPath"].ToString()</mca:CSharpValue>
+                          </InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <ui:DeleteFolderX DisplayName="Delete Folder" sap:VirtualizedContainerService.HintSize="334,52" sap2010:WorkflowViewState.IdRef="DeleteFolderX_2" Recursive="True">
+                        <ui:DeleteFolderX.Path>
+                          <InArgument x:TypeArguments="x:String">
+                            <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_656">ProcessingFolder</mca:CSharpValue>
+                          </InArgument>
+                        </ui:DeleteFolderX.Path>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:DeleteFolderX>
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Validate Processing FolderPath" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_92" UnSafe="False" WorkflowFileName="Project\\Validate_Work_Folders.xaml">
+                        <ui:InvokeWorkflowFile.Arguments>
+                          <InArgument x:TypeArguments="x:String" x:Key="In_PathFolder">
+                            <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_657">Config["ProcessingFolderPath"].ToString()</mca:CSharpValue>
+                          </InArgument>
+                        </ui:InvokeWorkflowFile.Arguments>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:InvokeWorkflowFile>
+                    </Sequence>
                     <Assign DisplayName="Assign reportDate" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_32">
                       <Assign.To>
                         <OutArgument x:TypeArguments="s:DateTime">
@@ -541,7 +591,7 @@
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:MultipleAssign DisplayName="Assign all WF Varables" sap:VirtualizedContainerService.HintSize="480,52" sap2010:WorkflowViewState.IdRef="MultipleAssign_17">
+                        <ui:MultipleAssign DisplayName="Assign all WF Varables" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="MultipleAssign_17">
                           <ui:MultipleAssign.AssignOperations>
                             <scg:List x:TypeArguments="ui:AssignOperation" Capacity="32">
                               <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_67">
@@ -600,7 +650,7 @@
                                 </ui:AssignOperation.To>
                                 <ui:AssignOperation.Value>
                                   <InArgument x:TypeArguments="x:String">
-                                    <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_643">"MDB_WorkLog"+ReportDate.ToString("_dd-MM-yyyy.xlsx")</mca:CSharpValue>
+                                    <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_654">"MDB_WorkLog"+ReportDate.ToString("_dd-MM-yyyy")+".xlsx"</mca:CSharpValue>
                                   </InArgument>
                                 </ui:AssignOperation.Value>
                               </ui:AssignOperation>
@@ -625,18 +675,18 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:MultipleAssign>
-                        <Sequence DisplayName="Sequence: Download File" sap:VirtualizedContainerService.HintSize="480,829" sap2010:WorkflowViewState.IdRef="Sequence_79">
+                        <Sequence DisplayName="Sequence: Download File" sap:VirtualizedContainerService.HintSize="476,420" sap2010:WorkflowViewState.IdRef="Sequence_79">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,553" sap2010:WorkflowViewState.IdRef="TryCatch_6">
+                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="TryCatch_6">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <TryCatch.Try>
@@ -668,7 +718,7 @@
                               <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,105" sap2010:WorkflowViewState.IdRef="Catch`1_6">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
@@ -685,7 +735,7 @@
                               </Catch>
                             </TryCatch.Catches>
                           </TryCatch>
-                          <ui:LogMessage DisplayName="Log Message: Downloaded " sap:VirtualizedContainerService.HintSize="438,52" sap2010:WorkflowViewState.IdRef="LogMessage_55" Level="Info">
+                          <ui:LogMessage DisplayName="Log Message: Downloaded " sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="LogMessage_55" Level="Info">
                             <ui:LogMessage.Message>
                               <InArgument x:TypeArguments="x:Object">
                                 <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_627">"Report Downloaded to processing"</mca:CSharpValue>
@@ -698,7 +748,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:LogMessage>
-                          <ui:RenameFileX DisplayName="Rename File" sap:VirtualizedContainerService.HintSize="438,52" sap2010:WorkflowViewState.IdRef="RenameFileX_3" KeepExtension="True" NewName="MDB_WorkLog.xlsx">
+                          <ui:RenameFileX DisplayName="Rename File" sap:VirtualizedContainerService.HintSize="434,144" sap2010:WorkflowViewState.IdRef="RenameFileX_3" KeepExtension="True" NewName="MDB_WorkLog.xlsx">
                             <ui:RenameFileX.FilePath>
                               <InArgument x:TypeArguments="x:String">
                                 <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_628">FullPathUploadedFile</mca:CSharpValue>
@@ -706,8 +756,8 @@
                             </ui:RenameFileX.FilePath>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:RenameFileX>
@@ -1737,6 +1787,12 @@
           <mca:CSharpValue x:TypeArguments="sc:IEnumerable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_637">DayList</mca:CSharpValue>
         </InArgument>
       </ui:ForEach.Values>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </ui:ForEach>
   </Sequence>
 </Activity>
